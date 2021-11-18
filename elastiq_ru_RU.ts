@@ -37,22 +37,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="102"/>
+        <location filename="filterdialog.ui" line="75"/>
+        <source>wildcard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="filterdialog.ui" line="119"/>
         <source>size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="191"/>
+        <location filename="filterdialog.ui" line="208"/>
         <source>source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="129"/>
+        <location filename="filterdialog.ui" line="146"/>
         <source>sort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="150"/>
+        <location filename="filterdialog.ui" line="167"/>
         <source>range</source>
         <translation type="unfinished"></translation>
     </message>
@@ -62,32 +67,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="174"/>
+        <location filename="filterdialog.ui" line="191"/>
         <source>filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="162"/>
+        <location filename="filterdialog.ui" line="179"/>
         <source>lt | gt | lte | gte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="200"/>
+        <location filename="filterdialog.ui" line="217"/>
         <source>field1,field2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="75"/>
+        <location filename="filterdialog.ui" line="92"/>
         <source>from</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="141"/>
+        <location filename="filterdialog.ui" line="158"/>
         <source>asc | desc</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="filterdialog.ui" line="237"/>
+        <location filename="filterdialog.ui" line="254"/>
         <source>Clear All</source>
         <translation type="unfinished"></translation>
     </message>
@@ -126,7 +131,7 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="61"/>
-        <location filename="mainwindow.cpp" line="81"/>
+        <location filename="mainwindow.cpp" line="85"/>
         <source>Get by id</source>
         <translation type="unfinished"></translation>
     </message>
@@ -161,7 +166,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="82"/>
+        <location filename="mainwindow.cpp" line="86"/>
         <source>Id:</source>
         <translation type="unfinished"></translation>
     </message>

@@ -19,6 +19,9 @@ FilterDialog::FilterDialog(QWidget *parent) :
     connect(ui->leMatchName, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
     connect(ui->leMatchValue, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
 
+    connect(ui->leWildcardName, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
+    connect(ui->leWildcardValue, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
+
     connect(ui->leMatchPhraseName, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
     connect(ui->leMatchPhraseValue, &QLineEdit::textChanged, this, &FilterDialog::generateJson);
 
@@ -81,6 +84,23 @@ void FilterDialog::generateJson()
         } else {
             auto queryObject = jsonObj["query"].toObject();
             queryObject["match"] = matchObj;
+            jsonObj["query"] = queryObject;
+        }
+    }
+
+    // wildcard
+    if (!ui->leWildcardName->text().isEmpty()) {
+        QJsonObject matchObj{
+            {ui->leWildcardName->text(), ui->leWildcardValue->text()},
+        };
+
+        if (!jsonObj.contains("query")) {
+            jsonObj["query"] = QJsonObject{
+                {"wildcard", matchObj},
+            };
+        } else {
+            auto queryObject = jsonObj["query"].toObject();
+            queryObject["wildcard"] = matchObj;
             jsonObj["query"] = queryObject;
         }
     }
@@ -158,6 +178,9 @@ void FilterDialog::clearAll()
 
     ui->leMatchName->setText("");
     ui->leMatchValue->setText("");
+
+    ui->leWildcardName->setText("");
+    ui->leWildcardValue->setText("");
 
     ui->leMatchPhraseName->setText("");
     ui->leMatchPhraseValue->setText("");

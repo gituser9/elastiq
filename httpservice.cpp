@@ -59,12 +59,12 @@ void HttpService::replyFinished(QNetworkReply *reply)
         return;
     }
 
-    reply->deleteLater();
-
     if (reply->error()) {
         qDebug() << reply->error();
         return;
     }
+
+    reply->deleteLater();
 
     QByteArray data = reply->readAll();
 

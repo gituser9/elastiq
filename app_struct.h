@@ -14,7 +14,7 @@ struct ElasticRecord
 
     ElasticRecord()
     {
-        id = 0;
+        id = "";
         type = "";
         index = "";
         source = "";

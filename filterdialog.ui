@@ -15,7 +15,7 @@
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" colspan="2">
-    <layout class="QHBoxLayout" name="horizontalLayout_10">
+    <layout class="QHBoxLayout" name="horizontalLayout_12">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
@@ -66,6 +66,23 @@
          </item>
          <item>
           <widget class="QLineEdit" name="leMatchPhraseValue"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>wildcard</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLineEdit" name="leWildcardName"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leWildcardValue"/>
          </item>
         </layout>
        </item>
